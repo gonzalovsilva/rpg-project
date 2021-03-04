@@ -142,16 +142,16 @@ function changeBgRace(p) {
     const getInputRace = document.getElementById(`drop-p${p}-race`);
     switch (getInputRace.value) {
         case 'human':
-            imgP.style.backgroundImage = "url('../images/human.jpg')";
+            imgP.style.backgroundImage = "url('images/human.jpg')";
             break;
         case 'orc':
-            imgP.style.backgroundImage = "url('../images/orc.jpg')";
+            imgP.style.backgroundImage = "url('images/orc.jpg')";
             break;
         case 'elf':
-            imgP.style.backgroundImage = "url('../images/elf.jpg')";
+            imgP.style.backgroundImage = "url('images/elf.jpg')";
             break;
         case 'vampire':
-            imgP.style.backgroundImage = "url('../images/vampire.jpg')";
+            imgP.style.backgroundImage = "url('images/vampire.jpg')";
             break;
         default:
             break;

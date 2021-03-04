@@ -1,5 +1,6 @@
 # rpg-project
 
+[Check the result here.](https://gonzalovsilva.github.io/rpg-project/)
 ## Game logic
 * ### Items
 
