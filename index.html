@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>RPG Project</title>
+</head>
+
+<body>
+    <header>
+        <h1>RPG Game</h1>
+    </header>
+    <main>
+        <section id="start-p1" class="player-start">
+            <button id="choose-p1" class="start blue">P1</button>
+            <button id="choose-cpu-p1" class="start red">CPU</button>
+        </section>
+        <section id="player-area-p1" class="player-area disable">
+            <section id="p1-image" class="player-img">
+                <section id="p1-final" class="final disable"></section>
+                <section id="input-p1" class="input">
+                    <input id="input-p1-name" class="input-name" pattern="[A-Za-z0-9]+" placeholder="Type your name."
+                        autocomplete="off" maxlength="16">
+                    <select id="drop-p1-race" class="drop-race" autocomplete="off">
+                        <option value="none" selected disabled hidden>Choose a Race :</option>
+                        <option value="human">human</option>
+                        <option value="orc">orc</option>
+                        <option value="elf">elf</option>
+                        <option value="vampire">vampire</option>
+                    </select>
+                    <select id="drop-p1-item" class="drop-item" autocomplete="off">
+                        <option value="none" selected disabled hidden>Choose an Item :</option>
+                        <option value="boots">boots</option>
+                        <option value="staff">staff</option>
+                        <option value="sword">sword</option>
+                        <option value="bow">bow</option>
+                    </select>
+                </section>
+                <p id='stats-bar-p1' class="stats-p1 bar disable"><span id="item-p1" class="item"></span><meter
+                        id="p1-life" class="life" low="20" high="30" max="100" value="100"></meter><span
+                        id='life-text-p1' class="life-text"></span></p>
+                <p id="msg-p1" class="msg disable"></p>
+                <div id='stats-p1-bottom' class="stats-p1 bottom disable">
+                    <p id="race-p1" class="race">Race</p>
+                    <p id="name-p1" class="name">Name</p>
+                </div>
+            </section>
+            <button id="continue-p1" class="btn">Continue</button>
+            <section id="btns-p1" class="btns disable">
+                <button id="hit-p1" class="btn">hit</button>
+                <button id="heal-p1" class="btn">heal</button>
+                <button id="yield-p1" class="btn">yield</button>
+            </section>
+            <p id="p1-log" class="stats-p1 log disable"></p>
+        </section>
+        <span id="vs">VS</span>
+        <section id="start-p2" class="player-start">
+            <button id="choose-p2" class="start blue">P2</button>
+            <button id="choose-cpu-p2" class="start red">CPU</button>
+        </section>
+        <section id="player-area-p2" class="player-area disable">
+            <section id="p2-image" class="player-img">
+                <section id="p2-final" class="final disable"></section>
+                <section id="input-p2" class="input">
+                    <input id="input-p2-name" class="input-name" pattern="[A-Za-z0-9]+" placeholder="Type your name."
+                        autocomplete="off" maxlength="16">
+                    <select id="drop-p2-race" class="drop-race" autocomplete="off">
+                        <option value="none" selected disabled hidden>Choose a Race :</option>
+                        <option value="human">human</option>
+                        <option value="orc">orc</option>
+                        <option value="elf">elf</option>
+                        <option value="vampire">vampire</option>
+                    </select>
+                    <select id="drop-p2-item" class="drop-item" autocomplete="off">
+                        <option value="none" selected disabled hidden>Choose an Item :</option>
+                        <option value="boots">boots</option>
+                        <option value="staff">staff</option>
+                        <option value="sword">sword</option>
+                        <option value="bow">bow</option>
+                    </select>
+                </section>
+                <p id='stats-bar-p2' class="stats-p2 bar disable"><span id="item-p2" class="item"></span><meter
+                        id="p2-life" class="life" low="20" high="30" max="100" value="100"></meter><span
+                        id='life-text-p2' class="life-text"></span></p>
+                <p id="msg-p2" class="msg disable"></p>
+                <div id='stats-p2-bottom' class="stats-p2 bottom disable">
+                    <p id="race-p2" class="race">Race</p>
+                    <p id="name-p2" class="name">Name</p>
+                </div>
+            </section>
+            <button id="continue-p2" class="btn">Continue</button>
+            <section id="btns-p2" class="btns disable">
+                <button id="hit-p2" class="btn">hit</button>
+                <button id="heal-p2" class="btn">heal</button>
+                <button id="yield-p2" class="btn">yield</button>
+            </section>
+            <p id="p2-log" class="stats-p2 log disable"></p>
+        </section>
+
+    </main>
+    <script src="js/character.js"></script>
+    <script src="js/gamelogic.js"></script>
+</body>
+
+</html>
