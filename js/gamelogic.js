@@ -393,16 +393,16 @@ function changeBgItem(p) {
     const getInputItem = document.getElementById(`drop-p${p}-item`);
     switch (getInputItem.value) {
         case 'boots':
-            imgP.style.backgroundImage = "url('../images/boots.png')";
+            imgP.style.backgroundImage = "url('images/boots.png')";
             break;
         case 'staff':
-            imgP.style.backgroundImage = "url('../images/staff.png')";
+            imgP.style.backgroundImage = "url('images/staff.png')";
             break;
         case 'sword':
-            imgP.style.backgroundImage = "url('../images/sword.png')";
+            imgP.style.backgroundImage = "url('images/sword.png')";
             break;
         case 'bow':
-            imgP.style.backgroundImage = "url('../images/bow.png')";
+            imgP.style.backgroundImage = "url('images/bow.png')";
             break;
         default:
             break;
